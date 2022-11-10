@@ -19,6 +19,7 @@ user user
 run python3 -m virtualenv --python=/usr/bin/python3 $WORKON_HOME/fuzzware-modeling
 run . $WORKON_HOME/fuzzware-modeling/bin/activate && pip install -r /requirements-modeling.txt
 user root
+run python3 -m pip install --upgrade pip
 run pip3 install -r /requirements-pipeline.txt
 run pip3 install -r /requirements-emulator.txt
 
